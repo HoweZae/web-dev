@@ -1,0 +1,47 @@
+body {
+    background-color: bisque;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* For Task 2 */
+.card {
+    border: 0.5rem solid green;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    width: 35rem;
+}
+
+.full-width {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.black-bg { background-color: black; }
+
+.rounded-full { border-radius: 50%; }
+
+#card-header { color: red; }
+
+.text-white.font-weight-light {
+    color: white;
+    font-weight: normal;
+}
+
+.font-weight-light {
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+/* For Task 5 */
+#absolute-card {
+    position: sticky;
+    top: 2rem;
+    right: 2rem;
+}
