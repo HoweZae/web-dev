@@ -2,6 +2,7 @@
     import "../app.css";
 
     import Lyric from './Lyric.svelte';
+    import MultiLyric from './MultiLyric.svelte';
 
 	let title = 'svelte testing page';
     let svelteLogo = '/test.jpg';
@@ -12,6 +13,12 @@
     let count = [0];
     function increment() {
         count = [...count, count.length + 1]
+    }
+
+    const multilyric1 = {
+        line1: "Our country, guess it was a lawless land",
+        line2: "Quiet my fears with the touch of your hands",
+        line3: "My paper cut stings from my paper thin plans",
     }
 
     /* REACTIVES */
@@ -45,4 +52,5 @@
     Now I'm searching for {countActual} {countActual === 1 ? 'sign' : 'signs'} in {doubled} haunted clubs
 </button>
 
-<Lyric/>
+<Lyric />
+<MultiLyric {...multilyric1}/>
